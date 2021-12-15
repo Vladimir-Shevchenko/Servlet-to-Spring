@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
+            <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -80,6 +80,14 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.3.13</version>
+            <scope>test</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>org.assertj</groupId>
@@ -238,6 +246,57 @@
             <artifactId>spring-security-config</artifactId>
             <groupId>org.springframework.security</groupId>
             <version>5.6.0</version>
+        </dependency>
+
+
+<!--        testing-->
+
+
+
+
+
+
+
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>2.0.9.RELEASE</version>
+            </dependency>
+
+
+
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>2.3.23</version>
+            </dependency>
+
+
+            <!-- For Java versions starting at 9 -->
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <!---->
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+                <scope>provided</scope>
+            </dependency>
+        <dependency>
+            <artifactId>assertj-core</artifactId>
+            <groupId>org.assertj</groupId>
+            <version>3.12.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <artifactId>byte-buddy</artifactId>
+            <groupId>net.bytebuddy</groupId>
+            <version>1.9.10</version>
+            <scope>compile</scope>
         </dependency>
 
 
