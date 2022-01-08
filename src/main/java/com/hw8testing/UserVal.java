@@ -1,6 +1,5 @@
-package com.service;
+package com.hw8testing;
 
-import com.model.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,10 +10,13 @@ import org.springframework.validation.Validator;
  * @author Aidar Shaifutdinov.
  */
 @Component
-public class UserValidator implements Validator {
+public class UserVal implements Validator {
 
     @Autowired
     private UserService userService;
+
+
+
 
     @Override
     public boolean supports(Class<?> clazz) {

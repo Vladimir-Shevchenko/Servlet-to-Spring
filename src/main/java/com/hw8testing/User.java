@@ -1,31 +1,32 @@
-package com.model;
+package com.hw8testing;
 
-import javax.persistence.*;
-//import javax.validation.constraints.Email;
-//import javax.validation.constraints.NotBlank;
-//import javax.validation.constraints.Size;
+
+//import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 /**
  * @author Aidar Shaifutdinov.
  */
-@Entity
-@Table(name = "users")
+//@Entity
+//@Table(name = "users")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
+    @NotBlank(message = "Name is required")
     private String name;
 
-
+    @Size(min = 1, max = 10, message = "Surname should be from 1 to 10 symbols")
     private String surname;
 
-
+    @Email
     private String email;
 
-
+    @Size(min = 7, message = "Minimum 7 symbols")
     private String password;
 
     public User() {

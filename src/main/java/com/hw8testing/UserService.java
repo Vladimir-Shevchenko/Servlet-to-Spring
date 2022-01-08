@@ -1,9 +1,6 @@
-package com.service;
+package com.hw8testing;
 
 
-//import org.doit.model.User;
-
-import com.model.User;
 
 import java.util.List;
 
