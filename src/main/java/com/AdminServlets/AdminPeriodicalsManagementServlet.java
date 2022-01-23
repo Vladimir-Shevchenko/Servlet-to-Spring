@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
-
+//hh
 @Controller
 public class AdminPeriodicalsManagementServlet /* extends HttpServlet*/ {
 
